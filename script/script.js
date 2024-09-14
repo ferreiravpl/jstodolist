@@ -12,14 +12,13 @@ function createToDoElement() {
 	ul.appendChild(li); //Adiciona o elemento na lista
 	input.value = ""; //Limpa o input
 
-	//START STRIKETHROUGH
-	// because it's in the function, it only adds it for new items
+	//Cria a classe CSS para estilizar o marcar como concluído
 	function markAsConcluded() {
 		li.classList.toggle("done");
 	}
 
+	//Chama a função de conclusão no evento de clique
 	li.addEventListener("click",markAsConcluded);
-	//END STRIKETHROUGH
 
 	// Criação do botão de remoção dentro dos elementos da lista
 	var removeButton = document.createElement("button");
@@ -27,8 +26,7 @@ function createToDoElement() {
 	li.appendChild(removeButton);
 	removeButton.addEventListener("click", deleteToDo);
 
-
-	//Função para criar a classe de deletar a tarefa
+	//Função para criar a classe CSS de deletar a tarefa
 	function deleteToDo(){
 		li.classList.add("delete")
 	}
