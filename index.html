@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+	<title>Lista de tarefas em JS</title>
+    <link
+      rel="shortcut icon"
+      href="util/icons8-notebook-16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="intro">
+          <h1>Tarefas!</h1>
+        </div>
+
+        <div class="row">
+          <div>
+            <p id="create">
+              Insira o texto desejado e clique no botão para criar a tarefa
+            </p>
+            <p id="conclude">Clique nela para marcá-la como concluída</p>
+            <p id="remove">Clique no "X" para removê-la da sua lista</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <input
+              id="userInput"
+              type="text"
+              placeholder="Nova tarefa"
+              maxlength="150"
+            />
+            <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+        </div>
+
+        <div class="row">
+          <div class="listItems">
+            <ul></ul>
+          </div>
+        </div>
+		
+    </div>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
